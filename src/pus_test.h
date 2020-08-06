@@ -2,8 +2,7 @@
 
 #define PORT 1025 
 #define IS_SERVER 1
-//#define SERVER_IP "127.0.0.1"
-#define SERVER_IP "127.0.0.2"
+#define SERVER_IP "127.0.0.1"
 
 #include <fstream>
 #include <cassert>
