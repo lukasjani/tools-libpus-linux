@@ -2,8 +2,8 @@
 
 #define PORT 1025 
 #define IS_SERVER 1
-//#define SERVER_IP "172.16.201.38" //zebra
-#define SERVER_IP "172.16.201.192" //rpi2
+//#define SERVER_IP "127.0.0.1"
+#define SERVER_IP "127.0.0.2"
 
 #include <fstream>
 #include <cassert>
