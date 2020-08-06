@@ -1,0 +1,115 @@
+﻿  SSH: Looking up host...
+  SSH: Connecting...
+  SSH: Handshaking...
+  SSH: Checking key...
+  SSH: Authenticating...
+EXEC : warning : Stderr line received 'tar: src: time stamp 2020-07-31 11:39:30 is 7199.6645821 s in the future'
+EXEC : VisualGDB warning : The target's clock might be out-of-sync with this computer's clock. Use the Tools->VisualGDB->SSH Host Manager->Host-wide Settings to configure the timestamp offset.
+  VisualGDB: C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux => /home/robo/tools-libpus-linux/: 77 files copied (786KB).
+  VisualGDB: Run "make  CONFIG=Debug" in directory "/home/robo/tools-libpus-linux/" on robo@localhost (SSH)
+  g++ -ggdb -ffunction-sections -O0   -DDEBUG=1  -c tools-libpus-linux.cpp -o Debug/tools-libpus-linux.o -MD -MF Debug/tools-libpus-linux.dep
+  tools-libpus-linux.cpp: In function 'pusError_t pus_tc_sendTCP(int, char*, int, pusSequenceCount_t*, int*)':
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(68,16): warning : NULL used in arithmetic [-Wpointer-arith]
+    if (socket == NULL || buffer == NULL || packet_length == NULL)
+                  ^~~~
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(68,59): warning : NULL used in arithmetic [-Wpointer-arith]
+    if (socket == NULL || buffer == NULL || packet_length == NULL)
+                                                             ^~~~
+  tools-libpus-linux.cpp: In function 'pusError_t pus_tm_sendTCP(int, char*, int, pusSequenceCount_t*, int*, pusApid_t)':
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(150,16): warning : NULL used in arithmetic [-Wpointer-arith]
+    if (socket == NULL || buffer == NULL || packet_length == NULL)
+                  ^~~~
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(150,59): warning : NULL used in arithmetic [-Wpointer-arith]
+    if (socket == NULL || buffer == NULL || packet_length == NULL)
+                                                             ^~~~
+  tools-libpus-linux.cpp: In function 'pusError_t pus_tc_recvTCP(int, char*)':
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(232,16): warning : NULL used in arithmetic [-Wpointer-arith]
+    if (socket == NULL || buffer == NULL)
+                  ^~~~
+  tools-libpus-linux.cpp: In function 'pusError_t pus_tm_recvTCP(int, char*)':
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(329,16): warning : NULL used in arithmetic [-Wpointer-arith]
+    if (socket == NULL || buffer == NULL)
+                  ^~~~
+  tools-libpus-linux.cpp: In function 'void start_server()':
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(592,65): warning : format '%d' expects argument of type 'int', but argument 2 has type 'asn1SccPusServiceType {aka long long unsigned int}' [-Wformat=]
+        printf("Service: %d\n", inTm.data.u.tmData.header.serviceId);
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(593,65): warning : format '%d' expects argument of type 'int', but argument 2 has type 'asn1SccPusSubserviceType {aka long long unsigned int}' [-Wformat=]
+        printf("Subtype: %d\n", inTm.data.u.tmData.header.subtypeId);
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(632,99): warning : format '%d' expects argument of type 'int', but argument 2 has type 'asn1SccPusSt05EventId {aka long long unsigned int}' [-Wformat=]
+        printf("Received Informative Event Report ID: %d\n", inTm.data.u.tmData.data.u.st_5_X.eventId);
+                                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(633,123): warning : format '%d' expects argument of type 'int', but argument 2 has type 'asn1SccPusUInt64 {aka long long unsigned int}' [-Wformat=]
+        printf("Content:\t%d\t%d\n", inTm.data.u.tmData.data.u.st_5_X.data.data1, inTm.data.u.tmData.data.u.st_5_X.data.data2);
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                             ^
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(633,123): warning : format '%d' expects argument of type 'int', but argument 3 has type 'asn1SccPusUInt64 {aka long long unsigned int}' [-Wformat=]
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(638,100): warning : format '%d' expects argument of type 'int', but argument 2 has type 'asn1SccPusSt05EventId {aka long long unsigned int}' [-Wformat=]
+        printf("Received Low Severity Event Report ID: %d\n", inTm.data.u.tmData.data.u.st_5_X.eventId);
+                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(639,123): warning : format '%d' expects argument of type 'int', but argument 2 has type 'asn1SccPusUInt64 {aka long long unsigned int}' [-Wformat=]
+        printf("Content:\t%d\t%d\n", inTm.data.u.tmData.data.u.st_5_X.data.data1, inTm.data.u.tmData.data.u.st_5_X.data.data2);
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                             ^
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(639,123): warning : format '%d' expects argument of type 'int', but argument 3 has type 'asn1SccPusUInt64 {aka long long unsigned int}' [-Wformat=]
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(644,103): warning : format '%d' expects argument of type 'int', but argument 2 has type 'asn1SccPusSt05EventId {aka long long unsigned int}' [-Wformat=]
+        printf("Received Medium Severity Event Report ID: %d\n", inTm.data.u.tmData.data.u.st_5_X.eventId);
+                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(645,123): warning : format '%d' expects argument of type 'int', but argument 2 has type 'asn1SccPusUInt64 {aka long long unsigned int}' [-Wformat=]
+        printf("Content:\t%d\t%d\n", inTm.data.u.tmData.data.u.st_5_X.data.data1, inTm.data.u.tmData.data.u.st_5_X.data.data2);
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                             ^
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(645,123): warning : format '%d' expects argument of type 'int', but argument 3 has type 'asn1SccPusUInt64 {aka long long unsigned int}' [-Wformat=]
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(650,101): warning : format '%d' expects argument of type 'int', but argument 2 has type 'asn1SccPusSt05EventId {aka long long unsigned int}' [-Wformat=]
+        printf("Received High Severity Event Report ID: %d\n", inTm.data.u.tmData.data.u.st_5_X.eventId);
+                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(651,123): warning : format '%d' expects argument of type 'int', but argument 2 has type 'asn1SccPusUInt64 {aka long long unsigned int}' [-Wformat=]
+        printf("Content:\t%d\t%d\n", inTm.data.u.tmData.data.u.st_5_X.data.data1, inTm.data.u.tmData.data.u.st_5_X.data.data2);
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                             ^
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(651,123): warning : format '%d' expects argument of type 'int', but argument 3 has type 'asn1SccPusUInt64 {aka long long unsigned int}' [-Wformat=]
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(663,127): warning : format '%d' expects argument of type 'int', but argument 2 has type 'asn1SccPusSt20OnBoardParameterId {aka long long unsigned int}' [-Wformat=]
+        printf("ID:\t%d\tValue:\t%lf\n", inTm.data.u.tmData.data.u.st_20_2_3.arr[i], inTm.data.u.tmData.data.u.st_20_2_3.value[i]);
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                              ^
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(670,137): warning : format '%d' expects argument of type 'int', but argument 2 has type 'asn1SccPusServiceType {aka long long unsigned int}' [-Wformat=]
+       printf("Received %d_%d Packet, which cannot be handled!\n", inTm.data.u.tmData.header.serviceId, inTm.data.u.tmData.header.subtypeId);
+                                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                     ^
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(670,137): warning : format '%d' expects argument of type 'int', but argument 3 has type 'asn1SccPusSubserviceType {aka long long unsigned int}' [-Wformat=]
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(698,34): warning : format '%d' expects argument of type 'int*', but argument 2 has type 'pusSt20OnBoardParamId_t* {aka long long unsigned int*}' [-Wformat=]
+        scanf("%d", &buffer3_X_id[i]);
+                    ~~~~~~~~~~~~~~~~^
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(893,37): warning : format '%d' expects argument of type 'int*', but argument 2 has type 'pusSt20OnBoardParamId_t* {aka long long unsigned int*}' [-Wformat=]
+        scanf("%d", &buffer20_1_3_id[i]);
+                    ~~~~~~~~~~~~~~~~~~~^
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(946,37): warning : format '%d' expects argument of type 'int*', but argument 2 has type 'pusSt20OnBoardParamId_t* {aka long long unsigned int*}' [-Wformat=]
+        scanf("%d", &buffer20_1_3_id[i]);
+                    ~~~~~~~~~~~~~~~~~~~^
+  tools-libpus-linux.cpp: In function 'void start_client()':
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(1377,82): warning : format '%d' expects argument of type 'int', but argument 2 has type 'asn1SccPusSt20OnBoardParameterId {aka long long unsigned int}' [-Wformat=]
+        printf("Client: Enabled House %d\n", inTc.data.u.tcData.data.u.st_3_X.arr[i]);
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(1391,83): warning : format '%d' expects argument of type 'int', but argument 2 has type 'asn1SccPusSt20OnBoardParameterId {aka long long unsigned int}' [-Wformat=]
+        printf("Client: Disabled House %d\n", inTc.data.u.tcData.data.u.st_3_X.arr[i]);
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(1407,74): warning : format '%d' expects argument of type 'int', but argument 2 has type 'asn1SccPusSt20OnBoardParameterId {aka long long unsigned int}' [-Wformat=]
+        printf("Enabled Diagn %d\n", inTc.data.u.tcData.data.u.st_3_X.arr[i]);
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(1421,75): warning : format '%d' expects argument of type 'int', but argument 2 has type 'asn1SccPusSt20OnBoardParameterId {aka long long unsigned int}' [-Wformat=]
+        printf("Disabled Diagn %d\n", inTc.data.u.tcData.data.u.st_3_X.arr[i]);
+                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(1430,39): warning : narrowing conversion of 'inTc.asn1SccPusPacket::data.asn1SccPusPacketData::u.asn1SccPusPacketData::<unnamed union>::tcData.asn1SccPusPacketData_tcData::header.asn1SccPusTcHeader::subtypeId' from 'asn1SccPusSubserviceType {aka long long unsigned int}' to 'asn1SccPusInt32 {aka long long int}' inside { } [-Wnarrowing]
+       fai = { inTc.data.u.tcData.header.subtypeId, 0, 0 };
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(1443,39): warning : narrowing conversion of 'inTc.asn1SccPusPacket::data.asn1SccPusPacketData::u.asn1SccPusPacketData::<unnamed union>::tcData.asn1SccPusPacketData_tcData::header.asn1SccPusTcHeader::subtypeId' from 'asn1SccPusSubserviceType {aka long long unsigned int}' to 'asn1SccPusInt32 {aka long long int}' inside { } [-Wnarrowing]
+       fai = { inTc.data.u.tcData.header.subtypeId, 0, 0 };
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(1485,39): warning : narrowing conversion of 'inTc.asn1SccPusPacket::data.asn1SccPusPacketData::u.asn1SccPusPacketData::<unnamed union>::tcData.asn1SccPusPacketData_tcData::header.asn1SccPusTcHeader::subtypeId' from 'asn1SccPusSubserviceType {aka long long unsigned int}' to 'asn1SccPusInt32 {aka long long int}' inside { } [-Wnarrowing]
+       fai = { inTc.data.u.tcData.header.subtypeId, 0, 0 };
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(1527,79): warning : format '%d' expects argument of type 'int', but argument 2 has type 'pusSt20OnBoardParamId_t {aka long long unsigned int}' [-Wformat=]
+        printf("Param List: ID %d\t V%f\n", buffer20_2_id[i], buffer20_2_value[i]);
+                                            ~~~~~~~~~~~~~~~~                     ^
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(1577,39): warning : narrowing conversion of 'inTc.asn1SccPusPacket::data.asn1SccPusPacketData::u.asn1SccPusPacketData::<unnamed union>::tcData.asn1SccPusPacketData_tcData::header.asn1SccPusTcHeader::subtypeId' from 'asn1SccPusSubserviceType {aka long long unsigned int}' to 'asn1SccPusInt32 {aka long long int}' inside { } [-Wnarrowing]
+       fai = { inTc.data.u.tcData.header.subtypeId, 0, 0 };
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+C:\Users\Robo\Documents\tools-libpus-linux\tools-libpus-linux\\tools-libpus-linux.cpp(1589,38): warning : narrowing conversion of 'inTc.asn1SccPusPacket::data.asn1SccPusPacketData::u.asn1SccPusPacketData::<unnamed union>::tcData.asn1SccPusPacketData_tcData::header.asn1SccPusTcHeader::subtypeId' from 'asn1SccPusSubserviceType {aka long long unsigned int}' to 'asn1SccPusInt32 {aka long long int}' inside { } [-Wnarrowing]
+      fai = { inTc.data.u.tcData.header.subtypeId, 0, 0 };
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+  g++ -o Debug/tools-libpus-linux -Wl,-gc-sections    -Wl,--start-group Debug/dataview-uniq.o Debug/pus_apid.o Debug/pus_error.o Debug/pus_events.o Debug/pus_event_action.o Debug/pus_file_management_linux.o Debug/pus_housekeeping.o Debug/pus_notify.o Debug/pus_packet.o Debug/pus_packet_queues.o Debug/pus_packet_reduced.o Debug/pus_parameter_management.o Debug/pus_parameter_monitoring.o Debug/pus_st01_packets.o Debug/pus_st03_packets.o Debug/pus_st05_packets.o Debug/pus_st08_packets.o Debug/pus_st09_packets.o Debug/pus_st11_packets.o Debug/pus_st12_packets.o Debug/pus_st13_packets.o Debug/pus_st17_packets.o Debug/pus_st18_packets.o Debug/pus_st19_packets.o Debug/pus_st20_packets.o Debug/pus_st23_packets.o Debug/pus_stored_param.o Debug/pus_test.o Debug/pus_threads.o Debug/pus_time.o Debug/pus_timebased_scheduling.o Debug/pus_encoder.o Debug/tools-libpus-linux.o   -Wl,--rpath='$ORIGIN'   -Wl,--end-group

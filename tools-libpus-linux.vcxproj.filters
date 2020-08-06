@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{51401d0b-8e54-43f4-968d-0b2660e35a56}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{9e6dfd82-97dd-4ec0-bdba-97f07f4c25d1}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{030acaf9-3fed-4e86-8eb6-5760f5b3b876}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Make files">
+      <UniqueIdentifier>{3fd570a4-65a2-4f0c-82cd-0484bd10bafe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{32823dda-559b-41c6-bdca-08338b86050b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="debug.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="release.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="tools-libpus-linux-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="tools-libpus-linux-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <ClCompile Include="src\pus_apid.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_error.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_event_action.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_events.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_file_management_linux.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_housekeeping.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_notify.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_packet.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_packet_queues.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_packet_reduced.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_parameter_management.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_parameter_monitoring.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_st01_packets.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_st03_packets.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_st05_packets.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_st08_packets.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_st09_packets.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_st11_packets.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_st12_packets.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_st17_packets.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_st18_packets.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_st19_packets.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_st20_packets.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_st23_packets.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_stored_param.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_threads.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_time.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_timebased_scheduling.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\asn1crt.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dataview-uniq.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_apid.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_enable_services.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_error.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_event_action.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_events.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_file_management.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_housekeeping.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_notify.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_packet.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_packet_queues.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_packet_reduced.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_parameter_management.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_parameter_monitoring.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_st01_packets.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_st03_packets.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_st05_packets.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_st08_packets.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_st09_packets.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_st11_packets.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_st12_packets.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_st17_packets.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_st18_packets.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_st19_packets.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_st20_packets.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_st23_packets.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_stored_param.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_threads.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_time.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_timebased_scheduling.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_types.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools-libpus-linux.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_st13_packets.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_encoder.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pus_test.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tools-libpus-linux.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_st13_packets.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dataview-uniq.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_encoder.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pus_test.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

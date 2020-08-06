@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{C7521AB1-25E3-4FDD-853D-D3C6BB17C762}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="VisualGDBPackageDefinitions">
+    <ToolchainID>com.sysprogs.toolchain.default-gcc</ToolchainID>
+  </PropertyGroup>
+  <ImportGroup Label="VisualGDBFindComponents">
+    <Import Project="$(LOCALAPPDATA)\VisualGDB\FindComponents.props" />
+  </ImportGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\localhost\0000\include\c++\7;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\localhost\0000\include\x86_64-linux-gnu\c++\7;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\localhost\0000\include\c++\7\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\localhost\0001\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\localhost\0003\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\localhost\0002\include-fixed;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\localhost\0000\include\x86_64-linux-gnu;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\localhost\0000\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)tools-libpus-linux-Debug.vgdbsettings</NMakeOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\localhost\0000\include\c++\7;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\localhost\0000\include\x86_64-linux-gnu\c++\7;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\localhost\0000\include\c++\7\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\localhost\0001\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\localhost\0003\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\localhost\0002\include-fixed;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\localhost\0000\include\x86_64-linux-gnu;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\localhost\0000\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)"  "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)tools-libpus-linux-Release.vgdbsettings</NMakeOutput>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\asn1crt.h" />
+    <ClInclude Include="src\dataview-uniq.h" />
+    <ClInclude Include="src\pus_apid.h" />
+    <ClInclude Include="src\pus_enable_services.h" />
+    <ClInclude Include="src\pus_error.h" />
+    <ClInclude Include="src\pus_events.h" />
+    <ClInclude Include="src\pus_event_action.h" />
+    <ClInclude Include="src\pus_file_management.h" />
+    <ClInclude Include="src\pus_housekeeping.h" />
+    <ClInclude Include="src\pus_notify.h" />
+    <ClInclude Include="src\pus_packet.h" />
+    <ClInclude Include="src\pus_packet_queues.h" />
+    <ClInclude Include="src\pus_packet_reduced.h" />
+    <ClInclude Include="src\pus_parameter_management.h" />
+    <ClInclude Include="src\pus_parameter_monitoring.h" />
+    <ClInclude Include="src\pus_st01_packets.h" />
+    <ClInclude Include="src\pus_st03_packets.h" />
+    <ClInclude Include="src\pus_st05_packets.h" />
+    <ClInclude Include="src\pus_st08_packets.h" />
+    <ClInclude Include="src\pus_st09_packets.h" />
+    <ClInclude Include="src\pus_st11_packets.h" />
+    <ClInclude Include="src\pus_st12_packets.h" />
+    <ClInclude Include="src\pus_st13_packets.h" />
+    <ClInclude Include="src\pus_st17_packets.h" />
+    <ClInclude Include="src\pus_st18_packets.h" />
+    <ClInclude Include="src\pus_st19_packets.h" />
+    <ClInclude Include="src\pus_st20_packets.h" />
+    <ClInclude Include="src\pus_st23_packets.h" />
+    <ClInclude Include="src\pus_stored_param.h" />
+    <ClInclude Include="src\pus_test.h" />
+    <ClInclude Include="src\pus_threads.h" />
+    <ClInclude Include="src\pus_time.h" />
+    <ClInclude Include="src\pus_timebased_scheduling.h" />
+    <ClInclude Include="src\pus_encoder.h" />
+    <ClInclude Include="src\pus_types.h" />
+    <ClInclude Include="tools-libpus-linux.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="src\dataview-uniq.c" />
+    <ClCompile Include="src\pus_apid.c" />
+    <ClCompile Include="src\pus_error.c" />
+    <ClCompile Include="src\pus_events.c" />
+    <ClCompile Include="src\pus_event_action.c" />
+    <ClCompile Include="src\pus_file_management_linux.c" />
+    <ClCompile Include="src\pus_housekeeping.c" />
+    <ClCompile Include="src\pus_notify.c" />
+    <ClCompile Include="src\pus_packet.c" />
+    <ClCompile Include="src\pus_packet_queues.c" />
+    <ClCompile Include="src\pus_packet_reduced.c" />
+    <ClCompile Include="src\pus_parameter_management.c" />
+    <ClCompile Include="src\pus_parameter_monitoring.c" />
+    <ClCompile Include="src\pus_st01_packets.c" />
+    <ClCompile Include="src\pus_st03_packets.c" />
+    <ClCompile Include="src\pus_st05_packets.c" />
+    <ClCompile Include="src\pus_st08_packets.c" />
+    <ClCompile Include="src\pus_st09_packets.c" />
+    <ClCompile Include="src\pus_st11_packets.c" />
+    <ClCompile Include="src\pus_st12_packets.c" />
+    <ClCompile Include="src\pus_st13_packets.c" />
+    <ClCompile Include="src\pus_st17_packets.c" />
+    <ClCompile Include="src\pus_st18_packets.c" />
+    <ClCompile Include="src\pus_st19_packets.c" />
+    <ClCompile Include="src\pus_st20_packets.c" />
+    <ClCompile Include="src\pus_st23_packets.c" />
+    <ClCompile Include="src\pus_stored_param.c" />
+    <ClCompile Include="src\pus_test.cpp" />
+    <ClCompile Include="src\pus_threads.c" />
+    <ClCompile Include="src\pus_time.c" />
+    <ClCompile Include="src\pus_timebased_scheduling.c" />
+    <ClCompile Include="src\pus_encoder.cpp" />
+    <ClCompile Include="tools-libpus-linux.cpp" />
+    <None Include="Makefile" />
+    <None Include="debug.mak" />
+    <None Include="release.mak" />
+    <None Include="tools-libpus-linux-Debug.vgdbsettings" />
+    <None Include="tools-libpus-linux-Release.vgdbsettings" />
+  </ItemGroup>
+</Project>
